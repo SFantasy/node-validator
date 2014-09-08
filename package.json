@@ -1,6 +1,6 @@
 {
   "name": "is-valid",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "String validator for more",
   "main": "index.js",
   "scripts": {
@@ -21,5 +21,6 @@
   "bugs": {
     "url": "https://github.com/SFantasy/node-validator/issues"
   },
-  "homepage": "https://github.com/SFantasy/node-validator"
+  "homepage": "https://github.com/SFantasy/node-validator",
+  "dependencies": {}
 }
