@@ -37,6 +37,22 @@ validator.isEmail('abc@gmail.com'); // => true
 - isChineseTel(str): check if it is a Chinese cell-phone number
 - isChineseIdCard(str): check if it is a 18-digit Chinese ID card number
 
+## Test
+
+```
+git clone git@github.com:SFantasy/node-validator.git && cd node-validator
+
+[sudo] npm install mocha -g
+
+mocha
+```
+
+or 
+
+```
+npm test
+```
+
 ## License
 
 The MIT License

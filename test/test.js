@@ -40,7 +40,7 @@ function test(options) {
 describe('Validate', function () {
 
   describe('#isEmail', function () {
-    it('should validate email address', function (done) {
+    it('should validate email address', function () {
       test({
         validator: 'isEmail',
         valid: [
@@ -54,8 +54,56 @@ describe('Validate', function () {
           '@test.com'
         ]
       });
+    });
+  });
 
-      done();
+  describe('#isAllChinese', function () {
+    it('should validate all Chinese characters', function () {
+      test({
+        validator: 'isAllChinese',
+        valid: [
+          '你好世界'
+        ],
+        invalid: [
+          'hello world',
+          '你好world',
+          '你好 世界',
+          '你好123world'
+        ]
+      });
+    });
+  });
+
+  describe('#isAllEnglish', function () {
+    it('should validate all English characters', function () {
+      test({
+        validator: 'isAllEnglish',
+        valid: [
+          'HelloWorld'
+        ],
+        invalid: [
+          'Hello世界',
+          '你好世界',
+          '你好123world',
+          'Hello World'
+        ]
+      });
+    });
+  });
+
+  describe('#isAllDigit', function () {
+    it('should validate all digits', function () {
+      test({
+        validator: 'isAllDigit',
+        valid: [
+          '12345'
+        ],
+        invalid: [
+          '123哈哈',
+          'HelloWorld33',
+          '你好世界'
+        ]
+      });
     });
   });
 
