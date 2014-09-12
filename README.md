@@ -36,6 +36,8 @@ validator.isEmail('abc@gmail.com'); // => true
 - isAllDigit(str): check if it is a string only contains digits
 - isChineseTel(str): check if it is a Chinese cell-phone number
 - isChineseIdCard(str): check if it is a 18-digit Chinese ID card number
+- isVisaCard(str): check if it is a Visa card
+- isMasterCard(str): check if it is a Master card
 
 ## Test
 
