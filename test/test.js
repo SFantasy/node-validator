@@ -91,6 +91,25 @@ describe('Validate', function () {
     });
   });
 
+  describe('#isChineseTel', function () {
+    it('should validate Chinese cell phone number', function () {
+      test({
+        validator: 'isChineseTel',
+        valid: [
+          '14700000000',
+          '17700000000',
+          '13513513511',
+          '13838385438'
+        ],
+        invalid: [
+          '33312341241',
+          '1341231421',
+          '133141212441'
+        ]
+      });
+    });
+  });
+
   describe('#isAllDigit', function () {
     it('should validate all digits', function () {
       test({
@@ -102,6 +121,22 @@ describe('Validate', function () {
           '123哈哈',
           'HelloWorld33',
           '你好世界'
+        ]
+      });
+    });
+  });
+
+  describe('#isChineseIdCard', function () {
+    it('should validate an Chinese Id Card', function () {
+      test({
+        validator: 'isChineseIdCard',
+        valid: [
+          '15210319861215033x'
+        ],
+        invalid: [
+          '1234',
+          '12345678910111213x',
+          '123456789112312345'
         ]
       });
     });
