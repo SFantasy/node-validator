@@ -23,4 +23,4 @@ console.log(validator.isAllEnglish('test'));
 console.log(validator.isAllDigit('12345'));
 
 // isChineseIdCard
-console.log(validator.isChineseIdCard('330682199110273013'));
+console.log(validator.isChineseIdCard('15210319861215033x'));

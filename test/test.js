@@ -5,7 +5,7 @@
  * @description
  * @author Fantasy <fantasyshao@icloud.com>
  * @create 2014-09-10
- * @update 2014-09-10
+ * @update 2014-09-16
  */
 
 var validator = require('../index');
@@ -137,6 +137,47 @@ describe('Validate', function () {
           '1234',
           '12345678910111213x',
           '123456789112312345'
+        ]
+      });
+    });
+  });
+
+  describe('#isVisaCard', function () {
+    it('should validate a Visa card', function () {
+      test({
+        validator: 'isVisaCard',
+        valid: [
+          '4012888888881881',
+          '4111111111111111',
+          '4222222222222'
+        ],
+        invalid: [
+          // mess
+          '1234567891012312',
+          // JCB
+          '3566002020360505',
+          // Master Card
+          '5555555555554444'
+        ]
+      });
+    });
+  });
+
+  describe('#isMasterCard', function () {
+    it('should validate a Master card', function () {
+      test({
+        validator: 'isMasterCard',
+        valid: [
+          '5555555555554444',
+          '5105105105105100'
+        ],
+        invalid: [
+          // mess
+          '1234567891012312',
+          // JCB
+          '3566002020360505',
+          // Visa
+          '4012888888881881'
         ]
       });
     });
