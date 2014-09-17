@@ -5,12 +5,15 @@ String validator for more.
 
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
+[![coveralls][coveralls-image][coveralls-url]]
 [![David deps][david-image]][david-url]
 
 [npm-image]: https://img.shields.io/npm/v/is-valid.svg?style=flat
 [npm-url]: https://npmjs.org/package/is-valid
 [travis-image]: https://img.shields.io/travis/SFantasy/node-validator.svg?style=flat
 [travis-url]: https://travis-ci.org/SFantasy/node-validator
+[coveralls-url]: https://coveralls.io/r/SFantasy/node-validator
+[coveralls-image]: http://img.shields.io/coveralls/SFantasy/node-validator/master.svg
 [david-image]: https://img.shields.io/david/SFantasy/node-validator.svg?style=flat
 [david-url]: https://david-dm.org/SFantasy/node-validator
 
@@ -53,6 +56,12 @@ or
 
 ```
 npm test
+```
+
+### Coverage
+
+```
+npm test --coverage
 ```
 
 ## License
