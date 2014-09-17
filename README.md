@@ -5,7 +5,7 @@ String validator for more.
 
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
-[![coveralls][coveralls-image][coveralls-url]]
+[![Coveralls Status][coveralls-image]][coveralls-url]
 [![David deps][david-image]][david-url]
 
 [npm-image]: https://img.shields.io/npm/v/is-valid.svg?style=flat
