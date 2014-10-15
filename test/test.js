@@ -183,4 +183,21 @@ describe('Validate', function () {
     });
   });
 
+  describe('#isLink', function () {
+    it('should validate a link address', function () {
+      test({
+        validator: 'isLink',
+        valid: [
+          'http://example.com',
+          'http://example.com/test.html',
+          'https://example.com'
+        ],
+        invalid: [
+          'http:///test.com',
+          'htt://test.com'
+        ]
+      });
+    });
+  });
+
 });

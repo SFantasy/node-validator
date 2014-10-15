@@ -41,6 +41,7 @@ validator.isEmail('abc@gmail.com'); // => true
 - isChineseIdCard(str): check if it is a 18-digit Chinese ID card number
 - isVisaCard(str): check if it is a Visa card
 - isMasterCard(str): check if it is a Master card
+- isLink(str): check if it is a link
 
 ## Test
 
@@ -52,7 +53,7 @@ git clone git@github.com:SFantasy/node-validator.git && cd node-validator
 mocha
 ```
 
-or 
+or
 
 ```
 npm test
