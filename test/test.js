@@ -51,7 +51,10 @@ describe('Validate', function () {
         ],
         invalid: [
           'abcd@',
-          '@test.com'
+          '@test.com',
+          'abc@test',
+          'abcd',
+          'abc123de'
         ]
       });
     });
