@@ -4,12 +4,15 @@ node-validator
 String validator for more.
 
 [![NPM version][npm-image]][npm-url]
+[![npm download][download-image]][download-url]
 [![build status][travis-image]][travis-url]
 [![Coveralls Status][coveralls-image]][coveralls-url]
 [![David deps][david-image]][david-url]
 
 [npm-image]: https://img.shields.io/npm/v/is-valid.svg?style=flat
 [npm-url]: https://npmjs.org/package/is-valid
+[download-image]: https://img.shields.io/npm/dm/is-valid.svg?style=flat
+[download-url]: https://npmjs.org/package/is-valid
 [travis-image]: https://img.shields.io/travis/SFantasy/node-validator.svg?style=flat
 [travis-url]: https://travis-ci.org/SFantasy/node-validator
 [coveralls-url]: https://coveralls.io/r/SFantasy/node-validator
